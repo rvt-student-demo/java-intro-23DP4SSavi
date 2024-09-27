@@ -7,13 +7,24 @@ public class App
     public static void main( String[] args )
     {
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Give speed:");
-        double number = Double.valueOf(scanner.nextLine());
-        if (number > 120) {
-            System.out.println("Speeding ticket!");
-        }
-    
-    
-    
+
+        int number = 5;
+
+if (number % 5 == 0) {
+    System.out.println("The number is divisible by five!");
+}
+
+if (number % 6 != 0) {
+    System.out.println("The number is not divisible by six!");
+}
+Scanner reader = new Scanner(System.in);
+int number = Integer.valueOf(reader.nextLine());
+
+if (number % 4!= 0) {
+    System.out.println("The year is not a leap year.");
+ 
     }
+
+ }
+
 }
