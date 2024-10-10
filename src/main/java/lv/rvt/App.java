@@ -8,16 +8,23 @@ public class App
     {
         Scanner scanner = new Scanner(System.in);
 
-        System.out.print("Enter an integer less than 100: ");
-        int userInput = scanner.nextInt();
-
-        for (int number = userInput; number <= 100; number++) {
-            System.out.println(number);
+        System.out.print("Give a number: ");
+        int number = scanner.nextInt();
+        
+        if (number < 0) {
+            System.out.println("Factorial is not defined for negative numbers.");
+        } else {
+            long factorial = 1;
+            for (int i = 1; i <= number; i++) {
+                factorial *= i;
+            }
+            System.out.println("Factorial: " + factorial);
         }
-
+        
         scanner.close();
-
-
- }
+    }
 }
+
+
+
 
