@@ -8,23 +8,16 @@ public class App
     {
         Scanner scanner = new Scanner(System.in);
 
-        int number = 5;
+        System.out.print("Enter an integer less than 100: ");
+        int userInput = scanner.nextInt();
 
-        if (number % 5 == 0) {
-            System.out.println("The number is divisible by five!");
+        for (int number = userInput; number <= 100; number++) {
+            System.out.println(number);
         }
 
-        if (number % 6 != 0) {
-            System.out.println("The number is not divisible by six!");
-        }
-        Scanner reader = new Scanner(System.in);
-        int number = Integer.valueOf(reader.nextLine());
+        scanner.close();
 
-        if (number % 4!= 0) {
-            System.out.println("The year is not a leap year.");
- 
-    }
 
  }
-
 }
+
