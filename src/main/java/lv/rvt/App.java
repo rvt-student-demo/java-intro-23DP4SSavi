@@ -7,21 +7,22 @@ public class App
     public static void main( String[] args )
     {
         Scanner scanner = new Scanner(System.in);
-
+        int sum = 0; 
         System.out.println("Write numbers: ");
 
         while (true) {
             int number = scanner.nextInt();
             if (number == -1) {
-                System.out.println("Thx! Bye!");
-                break;
+                break; 
             }
+            sum += number; 
         }
 
+        System.out.println("Thx! Bye!");
+        System.out.println("Sum of the numbers: " + sum);
         scanner.close();
     }
 }
-
 
 
 
